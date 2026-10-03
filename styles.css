@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  margin-top: 80px; 
+}
+
+.images img {
+  width: 420px;
+  height: 300px;
+  border-radius: 20px; 
+  
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+
+#storyText {
+  white-space: pre-line;
+  line-height: 1.8;
+  text-align: center;
+}
