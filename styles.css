@@ -5,6 +5,12 @@ body {
   align-items: center;
   justify-content: center;
   gap: 24px;
+  font-family: "Comic Sans MS", "Chalkboard SE", cursive;
+  color: #5C4033;
+}
+
+h1 {
+  text-align: center;
 }
 
 .images {
@@ -16,7 +22,7 @@ body {
   padding: 0 16px;
   box-sizing: border-box;
   border-radius: 100px;
-  margin-top: 80px; 
+  margin-top: 0;
 }
 
 .images img {
@@ -35,4 +41,20 @@ body {
   white-space: pre-line;
   line-height: 1.8;
   text-align: center;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  background-color: #5C4033;
+  color: #FFF8E7;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 12px;
 }

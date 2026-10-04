@@ -17,11 +17,10 @@ function showSequenceOne() {
 }
 
 document.body.style.backgroundColor = backgroundColor;
-let count = 20;
+let count = 25;
 
 function updateStoryText() {
   let storyText = document.getElementById("storyText");
-
   if (count <= 30) {
     storyText.textContent =
       "“Home is warm and cozy, but it’s time for me to explore the world.” \n" +
@@ -35,37 +34,41 @@ function updateStoryText() {
   }
 }
 
+function updateAgeText() {
+  document.getElementById("ageText").textContent =
+    "When the puppy turns " + count + "...";
+}
+
 updateStoryText();
+updateAgeText();
 
-let pResult = document.getElementById("result");
-  if (count <= 30) {
-    showSequenceOne();
-  }
+if (count <= 30) {
+  showSequenceOne();
+}
 
-pResult.innerHTML = count;
 function addOne() {
   count++; // count = count + 1;
 
-  pResult.innerHTML = count;
   console.log("count: " + count);
 
   if (count > 30) {
     showSequenceTwo();
   }
  updateStoryText();
+ updateAgeText();
 
 }
 
 function subtractOne() {
   count--; // count = count - 1;
 
-  pResult.innerHTML = count;
   console.log("count: " + count);
 
   if (count <= 30) {
     showSequenceOne();
   }
   updateStoryText();
+  updateAgeText();
 
 }
 
