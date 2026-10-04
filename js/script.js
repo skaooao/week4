@@ -17,7 +17,7 @@ function showSequenceOne() {
 }
 
 document.body.style.backgroundColor = backgroundColor;
-let count = 25;
+let count = 26;
 
 function updateStoryText() {
   let storyText = document.getElementById("storyText");
